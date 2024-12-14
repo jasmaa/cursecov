@@ -4,9 +4,12 @@ version = "0.1.0-alpha"
 edition = "2021"
 
 [dependencies]
+assert_cmd = "2.0.16"
+assert_fs = "1.1.2"
 clap = { version = "4.5.23", features = ["derive"] }
 glob = "0.3.1"
 oxc_allocator = "0.41.0"
 oxc_ast = "0.41.0"
 oxc_parser = "0.41.0"
+predicates = "3.1.2"
 regex = "1.11.1"
