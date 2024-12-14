@@ -13,12 +13,13 @@ Cursecov attempts to bridge this gap by providing a way for JS developers to pro
 Install and run the command in your project:
 
 ```
-cursecov
+cursecov -h
 ```
 
 ## Development
 
 ```
 cargo build
-cargo run
+cargo test
+cargo run -- -h
 ```
