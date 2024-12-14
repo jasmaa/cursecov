@@ -1,6 +1,6 @@
 # cursecov
 
-Analyzes the percentage of swear word comments in JS projects.
+Analyzes and enforces a threshold percentage of swear word comments in JS projects.
 
 ## Why
 

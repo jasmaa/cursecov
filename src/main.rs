@@ -3,7 +3,7 @@ mod cursecov;
 use clap::Parser;
 use cursecov::run_cursecov;
 
-/// Analyzes the percentage of swear word comments in JS projects.
+/// Analyzes and enforces a threshold percentage of swear word comments in JS projects.
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
