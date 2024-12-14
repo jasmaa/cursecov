@@ -1,0 +1,12 @@
+[package]
+name = "cursecov"
+version = "0.1.0-alpha"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+glob = "0.3.1"
+oxc_allocator = "0.41.0"
+oxc_ast = "0.41.0"
+oxc_parser = "0.41.0"
+regex = "1.11.1"
