@@ -8,11 +8,11 @@ use cursecov::run_cursecov;
 #[command(version, about, long_about = None)]
 struct Args {
     /// Pattern for files to include.
-    #[arg(long, default_value_t = String::from("**/*.js,**/*.ts"))]
+    #[arg(long, default_value_t = String::from("**/*.js,**/*.ts,**/*.jsx,**/*.tsx"))]
     include_pattern: String,
 
     /// Pattern for files to ignore.
-    #[arg(long, default_value_t = String::from(""))]
+    #[arg(long, default_value_t = String::from("**/node_modules/**/*,dist/**/*,build/**/*"))]
     ignore_pattern: String,
 
     /// Minimum percentage of comments that need curse words.
