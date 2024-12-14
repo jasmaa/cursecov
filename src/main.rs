@@ -18,6 +18,10 @@ struct Args {
     /// Minimum percentage of comments that need curse words.
     #[arg(long, default_value_t = 30.0)]
     min_coverage: f64,
+
+    /// Verbose
+    #[arg(short, long, default_value_t = false)]
+    verbose: bool,
 }
 
 fn main() -> Result<(), String> {
@@ -27,7 +31,12 @@ fn main() -> Result<(), String> {
         return Err(String::from("Min coverage must be between 0 and 100."));
     }
 
-    run_cursecov(args.include_pattern, args.ignore_pattern, args.min_coverage)?;
+    run_cursecov(
+        args.include_pattern,
+        args.ignore_pattern,
+        args.min_coverage,
+        args.verbose,
+    )?;
 
     Ok(())
 }
