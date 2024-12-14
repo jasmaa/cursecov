@@ -1,6 +1,6 @@
 # cursecov
 
-A tool for analyzing percentage for curse word comments JS projects.
+A tool for analyzing the percentage of curse word comments in JS projects.
 
 ## Why
 
