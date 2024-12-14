@@ -3,7 +3,7 @@ mod cursecov;
 use clap::Parser;
 use cursecov::run_cursecov;
 
-/// Tool for analyzing percentage for curse word comments JS projects.
+/// A tool for analyzing percentage for curse word comments JS projects.
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
